@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9999E62B13AA581F005AF247 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9999E62A13AA581F005AF247 /* UIKit.framework */; };
+		9999E62D13AA581F005AF247 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9999E62C13AA581F005AF247 /* Foundation.framework */; };
+		9999E62F13AA581F005AF247 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9999E62E13AA581F005AF247 /* CoreGraphics.framework */; };
+		9999E63513AA5820005AF247 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9999E63313AA5820005AF247 /* InfoPlist.strings */; };
+		9999E63813AA5820005AF247 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9999E63713AA5820005AF247 /* main.m */; };
+		9999E63B13AA5820005AF247 /* TableViewTutorialAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9999E63A13AA5820005AF247 /* TableViewTutorialAppDelegate.m */; };
+		9999E63E13AA5820005AF247 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9999E63C13AA5820005AF247 /* MainWindow.xib */; };
+		9999E64613AA587A005AF247 /* TableViewTutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9999E64513AA587A005AF247 /* TableViewTutorialViewController.m */; };
+		9999E64913AA590E005AF247 /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9999E64813AA590E005AF247 /* DataController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9999E62613AA581F005AF247 /* TableViewTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9999E62A13AA581F005AF247 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9999E62C13AA581F005AF247 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9999E62E13AA581F005AF247 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9999E63213AA5820005AF247 /* TableViewTutorial-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TableViewTutorial-Info.plist"; sourceTree = "<group>"; };
+		9999E63413AA5820005AF247 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9999E63613AA5820005AF247 /* TableViewTutorial-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TableViewTutorial-Prefix.pch"; sourceTree = "<group>"; };
+		9999E63713AA5820005AF247 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9999E63913AA5820005AF247 /* TableViewTutorialAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewTutorialAppDelegate.h; sourceTree = "<group>"; };
+		9999E63A13AA5820005AF247 /* TableViewTutorialAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTutorialAppDelegate.m; sourceTree = "<group>"; };
+		9999E63D13AA5820005AF247 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9999E64413AA587A005AF247 /* TableViewTutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewTutorialViewController.h; sourceTree = "<group>"; };
+		9999E64513AA587A005AF247 /* TableViewTutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewTutorialViewController.m; sourceTree = "<group>"; };
+		9999E64713AA590E005AF247 /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		9999E64813AA590E005AF247 /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9999E62313AA581F005AF247 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9999E62B13AA581F005AF247 /* UIKit.framework in Frameworks */,
+				9999E62D13AA581F005AF247 /* Foundation.framework in Frameworks */,
+				9999E62F13AA581F005AF247 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9999E61B13AA581F005AF247 = {
+			isa = PBXGroup;
+			children = (
+				9999E63013AA581F005AF247 /* TableViewTutorial */,
+				9999E62913AA581F005AF247 /* Frameworks */,
+				9999E62713AA581F005AF247 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9999E62713AA581F005AF247 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9999E62613AA581F005AF247 /* TableViewTutorial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9999E62913AA581F005AF247 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9999E62A13AA581F005AF247 /* UIKit.framework */,
+				9999E62C13AA581F005AF247 /* Foundation.framework */,
+				9999E62E13AA581F005AF247 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9999E63013AA581F005AF247 /* TableViewTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				9999E64713AA590E005AF247 /* DataController.h */,
+				9999E64813AA590E005AF247 /* DataController.m */,
+				9999E64413AA587A005AF247 /* TableViewTutorialViewController.h */,
+				9999E64513AA587A005AF247 /* TableViewTutorialViewController.m */,
+				9999E63913AA5820005AF247 /* TableViewTutorialAppDelegate.h */,
+				9999E63A13AA5820005AF247 /* TableViewTutorialAppDelegate.m */,
+				9999E63C13AA5820005AF247 /* MainWindow.xib */,
+				9999E63113AA5820005AF247 /* Supporting Files */,
+			);
+			path = TableViewTutorial;
+			sourceTree = "<group>";
+		};
+		9999E63113AA5820005AF247 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9999E63213AA5820005AF247 /* TableViewTutorial-Info.plist */,
+				9999E63313AA5820005AF247 /* InfoPlist.strings */,
+				9999E63613AA5820005AF247 /* TableViewTutorial-Prefix.pch */,
+				9999E63713AA5820005AF247 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9999E62513AA581F005AF247 /* TableViewTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9999E64113AA5820005AF247 /* Build configuration list for PBXNativeTarget "TableViewTutorial" */;
+			buildPhases = (
+				9999E62213AA581F005AF247 /* Sources */,
+				9999E62313AA581F005AF247 /* Frameworks */,
+				9999E62413AA581F005AF247 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TableViewTutorial;
+			productName = TableViewTutorial;
+			productReference = 9999E62613AA581F005AF247 /* TableViewTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9999E61D13AA581F005AF247 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 9999E62013AA581F005AF247 /* Build configuration list for PBXProject "TableViewTutorial" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9999E61B13AA581F005AF247;
+			productRefGroup = 9999E62713AA581F005AF247 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9999E62513AA581F005AF247 /* TableViewTutorial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9999E62413AA581F005AF247 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9999E63513AA5820005AF247 /* InfoPlist.strings in Resources */,
+				9999E63E13AA5820005AF247 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9999E62213AA581F005AF247 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9999E63813AA5820005AF247 /* main.m in Sources */,
+				9999E63B13AA5820005AF247 /* TableViewTutorialAppDelegate.m in Sources */,
+				9999E64613AA587A005AF247 /* TableViewTutorialViewController.m in Sources */,
+				9999E64913AA590E005AF247 /* DataController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9999E63313AA5820005AF247 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9999E63413AA5820005AF247 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9999E63C13AA5820005AF247 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9999E63D13AA5820005AF247 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9999E63F13AA5820005AF247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9999E64013AA5820005AF247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		9999E64213AA5820005AF247 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewTutorial/TableViewTutorial-Prefix.pch";
+				INFOPLIST_FILE = "TableViewTutorial/TableViewTutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9999E64313AA5820005AF247 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TableViewTutorial/TableViewTutorial-Prefix.pch";
+				INFOPLIST_FILE = "TableViewTutorial/TableViewTutorial-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9999E62013AA581F005AF247 /* Build configuration list for PBXProject "TableViewTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9999E63F13AA5820005AF247 /* Debug */,
+				9999E64013AA5820005AF247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9999E64113AA5820005AF247 /* Build configuration list for PBXNativeTarget "TableViewTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9999E64213AA5820005AF247 /* Debug */,
+				9999E64313AA5820005AF247 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9999E61D13AA581F005AF247 /* Project object */;
+}
