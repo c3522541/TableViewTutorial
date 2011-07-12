@@ -7,25 +7,48 @@
 //
 
 #import "TableViewTutorialAppDelegate.h"
-
+#import "XMLParser.h"
 @implementation TableViewTutorialAppDelegate
 
 
 @synthesize window=_window;
-
+@synthesize books;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     viewController = [[TableViewTutorialViewController alloc] initWithStyle:UITableViewStylePlain];
-    viewController.title = @"TableViewTutorial";
+
     //rootViewController = [[RootViewController alloc] init];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
     [self.window addSubview:navigationController.view];
+    [self.window addSubview:viewController.view];
 
+    NSURL *url = [[NSURL alloc] initWithString:@"http://sites.google.com/site/iphonesdktutorials/xml/Books.xml"];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:url];
     
+    //Initialize the delegate
+    XMLParser *parser = [[XMLParser alloc] initXMLParser];
     
+    //Set delegate
+    [xmlParser setDelegate:parser];
     
-//    [self.window addSubview:viewController.view];
+    //Start parsing the XML file
+    BOOL success = [xmlParser parse];
+    
+    if(success)
+    {
+        NSLog(@"No Errors");
+    }
+    else
+    {
+        NSLog(@"Error Error Error");
+        
+    }
+    
+    [url release];
+    [xmlParser release];
+    [parser release];
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     return YES;

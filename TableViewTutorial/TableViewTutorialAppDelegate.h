@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "TableViewTutorialViewController.h"
+#import "MyNaviViewController.h"
 @interface TableViewTutorialAppDelegate : NSObject <UIApplicationDelegate> {
     TableViewTutorialViewController *viewController;
+    NSMutableArray *books;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
-
+@property (nonatomic, retain) NSMutableArray *books;
 @end
