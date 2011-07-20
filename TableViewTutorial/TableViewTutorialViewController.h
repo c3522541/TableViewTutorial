@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@class DataController;
+@class DataController, TableViewTutorialAppDelegate;
 @interface TableViewTutorialViewController : UITableViewController {
     DataController *dataController;
     UIView *myView;
+    TableViewTutorialAppDelegate *appDelegate;
+    
 }
 
 @property (nonatomic, retain) DataController *dataController;

@@ -8,6 +8,8 @@
 
 #import "TableViewTutorialViewController.h"
 #import "DataController.h"
+#import "Book.h"
+#import "TableViewTutorialAppDelegate.h"
 
 @implementation TableViewTutorialViewController
 @synthesize dataController;
@@ -58,7 +60,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [dataController countOfList] + 1;
+    return [appDelegate.books count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -70,14 +72,17 @@
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
-    if(indexPath.row == 0)
-    {
-        cell.text = @"New Item...";
-    }
-    else
-    {
-        cell.text = [dataController objectInListAtIndex:indexPath.row-1];
-    }
+    Book *aBook = [appDelegate.books objectAtIndex:indexPath.row];
+    
+    cell.text = aBook.title;
+//    if(indexPath.row == 0)
+//    {
+//        cell.text = @"New Item...";
+//    }
+//    else
+//    {
+//        cell.text = [dataController objectInListAtIndex:indexPath.row-1];
+//    }
     return cell;
 }
 
@@ -119,6 +124,7 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    appDelegate = (TableViewTutorialAppDelegate *)[[UIApplication sharedApplication] delegate];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
