@@ -41,7 +41,7 @@
     NSLog(@"Processing Element: %@", elementName);
 }
 
-- (void)parser:(XMLParser *)parser foundCharacters:(NSString *)string
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string
 {
     if(!currentElementValue)
     {
@@ -53,6 +53,33 @@
 //        [currentElementValue setString:string];
     }
     NSLog(@"Processing Value: %@", currentElementValue);
+}
+
+- (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
+{
+    if ([elementName isEqualToString:@"Books"])
+    {
+        return;
+    }
+    if ([elementName isEqualToString:@"Book"])
+    {
+        [appDelegate.books addObject:aBook];
+        [aBook release];
+        aBook = nil;
+    }
+    else
+    {
+        [aBook setValue:currentElementValue forKey:elementName];
+    }
+    [currentElementValue release];
+    currentElementValue = nil;
+}
+
+- (void)dealloc
+{
+    [aBook release];
+    [currentElementValue release];
+    [super dealloc];
 }
 
 @end
