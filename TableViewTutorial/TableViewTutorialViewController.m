@@ -46,7 +46,7 @@
     myView.autoresizesSubviews = YES;
     self.view = myView;
     UITableView *tableView = [[UITableView alloc] initWithFrame:cgRect style:UITableViewStylePlain];
-    tableView.editing = YES;
+    tableView.editing = NO;
     tableView.dataSource = self;
     tableView.delegate = self;
     
@@ -78,33 +78,37 @@
     return cell;
 }
 
-- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if(indexPath.row == 0)
-    {
-        return UITableViewCellEditingStyleInsert;
-    }
-    else
-    {
-        return UITableViewCellEditingStyleDelete;
-    }
-}
+//- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if(indexPath.row == 0)
+//    {
+//        return UITableViewCellEditingStyleInsert;
+//    }
+//    else
+//    {
+//        return UITableViewCellEditingStyleDelete;
+//    }
+//}
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if(editingStyle == UITableViewCellEditingStyleDelete)
-    {
-        [dataController removeDataAtIndex:indexPath.row - 1];
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-        
-    }
-    else if(editingStyle == UITableViewCellEditingStyleInsert)
-    {
-        [dataController addData:@"New Row Added"];
-        [tableView reloadData];
-    }
-}
+//- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    if(editingStyle == UITableViewCellEditingStyleDelete)
+//    {
+//        [dataController removeDataAtIndex:indexPath.row - 1];
+//        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+//        
+//    }
+//    else if(editingStyle == UITableViewCellEditingStyleInsert)
+//    {
+//        [dataController addData:@"New Row Added"];
+//        [tableView reloadData];
+//    }
+//}
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"touched index: %d", indexPath.row);
+}
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
@@ -120,10 +124,10 @@
     // e.g. self.myOutlet = nil;
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+//{
+//    // Return YES for supported orientations
+//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//}
 
 @end
