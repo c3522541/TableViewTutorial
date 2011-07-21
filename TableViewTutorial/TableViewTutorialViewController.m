@@ -75,14 +75,6 @@
     Book *aBook = [appDelegate.books objectAtIndex:indexPath.row];
     
     cell.text = aBook.title;
-//    if(indexPath.row == 0)
-//    {
-//        cell.text = @"New Item...";
-//    }
-//    else
-//    {
-//        cell.text = [dataController objectInListAtIndex:indexPath.row-1];
-//    }
     return cell;
 }
 
@@ -113,18 +105,17 @@
     }
 }
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+ appDelegate = (TableViewTutorialAppDelegate *)[[UIApplication sharedApplication] delegate];
 }
-*/
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    appDelegate = (TableViewTutorialAppDelegate *)[[UIApplication sharedApplication] delegate];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
